@@ -45,7 +45,11 @@ class Products extends Component {
 
         return (
             <div>
+            {listProducts.length > 0 ? (
                 <ul>{listProducts}</ul>
+            ) : (
+                <ul>No Products to display</ul>
+            )}
             </div>
         );
     }
